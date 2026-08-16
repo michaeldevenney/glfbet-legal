@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — glfbet</title>
+<link rel="stylesheet" href="/glfbet-legal/style.css">
+</head>
+<body>
+<main>
+  <a class="back" href="/glfbet-legal/">← glfbet</a>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated 16 August 2026</p>
+
+  <p>glfbet is a mobile app for arranging golf games and friendly wagers with people
+  you already know. This policy explains exactly what the app collects, why it
+  collects it, and what happens to it. It describes the app as actually built — not
+  a generic template.</p>
+
+  <div class="callout">
+    <strong>The short version.</strong> We collect the minimum needed to let you sign
+    in, keep a golfer profile, and find friends who already use glfbet. Your phone
+    contacts are never sent to us in readable form. We do not sell your data, we run
+    no advertising, and the app contains no third-party analytics or tracking SDKs.
+  </div>
+
+  <h2>Who is responsible</h2>
+  <p>glfbet is an independent project operated by its developer, not a company. For
+  any privacy question or request, contact
+  <a href="mailto:devenneymike@gmail.com">devenneymike@gmail.com</a>.</p>
+
+  <h2>What we collect</h2>
+
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Account identifier and email address, received from your sign-in provider</td>
+        <td>To create and authenticate your account</td>
+      </tr>
+      <tr>
+        <td>Display name, and optionally a profile photo, home course, handicap, and preferred tees</td>
+        <td>Your golfer profile, shown to friends you connect with</td>
+      </tr>
+      <tr>
+        <td>Your phone number, stored only as a one-way hash</td>
+        <td>So friends who have your number in their contacts can find you</td>
+      </tr>
+      <tr>
+        <td>One-way hashes of contacts from your address book, if you grant contacts permission</td>
+        <td>To match your contacts against existing glfbet users</td>
+      </tr>
+      <tr>
+        <td>A push notification token for your device</td>
+        <td>To deliver game invites to your phone</td>
+      </tr>
+      <tr>
+        <td>Your friend connections within glfbet</td>
+        <td>To maintain your friends list</td>
+      </tr>
+      <tr>
+        <td>Invites you send or receive, and their status</td>
+        <td>To deliver invites and show whether they were accepted</td>
+      </tr>
+      <tr>
+        <td>Your invite visibility preference</td>
+        <td>To respect who you allow to invite you</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>How contact matching works</h3>
+  <p>If you grant contacts permission, the app reads your address book <em>on your
+  device</em>, normalises each phone number, and converts it into a one-way hash. Only
+  those hashes are transmitted. Names, raw phone numbers, and email addresses from
+  your address book never leave your phone and are never stored by us. We compare the
+  hashes we receive against hashes of registered users to find matches.</p>
+
+  <p>If you later revoke contacts permission, the hashes we hold for you are deleted
+  immediately on the next sync — not batched or deferred.</p>
+
+  <h3>One case where an email address is stored directly</h3>
+  <p>If you invite someone by typing their <strong>email address</strong> manually,
+  we store that address as entered, because we need it to deliver the invite. Phone
+  numbers entered manually are hashed; email addresses are not. If you would prefer
+  an invite you sent to be removed, contact us and we will delete it.</p>
+
+  <h2>What we do not collect</h2>
+  <ul>
+    <li>We do not collect your location.</li>
+    <li>We do not collect the names or raw numbers in your address book.</li>
+    <li>We do not use advertising identifiers, and we show no ads.</li>
+    <li>The app contains no third-party analytics, attribution, or tracking SDKs.</li>
+    <li>We never receive your password. Sign-in is handled entirely by your chosen provider.</li>
+  </ul>
+
+  <h2>How your data is protected</h2>
+  <p>Data is stored in Microsoft Azure and encrypted in transit and at rest. Access to
+  your records is constrained at the database level so that a signed-in user can reach
+  only their own data. On your phone, session tokens are held in the operating system's
+  secure storage — iOS Keychain or Android Keystore — never in plain files.</p>
+
+  <h2>Who your data is shared with</h2>
+  <p>We do not sell your data and we do not share it for advertising. Your data passes
+  through a small number of service providers strictly to operate the app:</p>
+
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>Role</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Microsoft Azure</td><td>Hosting, database, and application infrastructure</td></tr>
+      <tr><td>Microsoft Entra External ID</td><td>Authentication and sign-in</td></tr>
+      <tr><td>Google or Facebook</td><td>Only if you choose to sign in with that provider</td></tr>
+      <tr><td>Expo push notification service</td><td>Delivering push notifications to your device</td></tr>
+    </tbody>
+  </table>
+
+  <p>We also collect operational telemetry — error and performance data about the
+  backend service itself — through Microsoft Azure Monitor. This is used to keep the
+  service running and is not used to build a profile of you.</p>
+
+  <p>Other golfers see only what you would expect them to see: your display name and
+  the profile details you chose to fill in, and only once you are connected as friends
+  or they have invited you.</p>
+
+  <h2>How long we keep it</h2>
+  <p>We keep your data for as long as your account exists. When you delete your
+  account, your profile, contact hashes, friend connections, and device tokens are
+  permanently removed immediately — see
+  <a href="/glfbet-legal/delete-my-data/">Delete My Data</a>. Contact hashes are also
+  removed as soon as you revoke contacts permission, without deleting your account.</p>
+
+  <h2>Your rights</h2>
+  <ul>
+    <li><strong>Access and export.</strong> You can export your personal data —
+      profile, friend connections, and contact hashes — from within the app at any time.</li>
+    <li><strong>Deletion.</strong> You can delete your account and its data from within
+      the app. The action is immediate and permanent.</li>
+    <li><strong>Withdraw contacts access.</strong> Revoking contacts permission purges
+      the hashes we hold, without affecting the rest of your account.</li>
+    <li><strong>Correction.</strong> You can edit your profile details in the app at
+      any time.</li>
+  </ul>
+
+  <p>Depending on where you live, you may have additional rights under laws such as the
+  GDPR or CCPA, including the right to lodge a complaint with a supervisory authority.
+  To exercise anything not covered by the in-app controls, email us.</p>
+
+  <h2>Children</h2>
+  <p>glfbet is not directed at children and is not intended for anyone under 18. We do
+  not knowingly collect data from children. If you believe a child has created an
+  account, contact us and we will remove it.</p>
+
+  <h2>International transfers</h2>
+  <p>The service is hosted in Microsoft Azure data centres. If you use glfbet from
+  outside the region where it is hosted, your data will be transferred to and processed
+  in that region.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, we will update the date at the top of this page
+  and, where the change affects how your data is used, notify you in the app.</p>
+
+  <footer>
+    <p>Questions about this policy:
+      <a href="mailto:devenneymike@gmail.com">devenneymike@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>

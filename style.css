@@ -1,0 +1,134 @@
+:root {
+  --bg: #ffffff;
+  --fg: #16191d;
+  --muted: #5c6570;
+  --rule: #e2e6ea;
+  --accent: #208AEF;
+  --card: #f7f9fb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --fg: #e8ecf0;
+    --muted: #9aa4ae;
+    --rule: #2a2f35;
+    --accent: #5aa9f5;
+    --card: #1c2126;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 .5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2.5rem 0 .75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1.75rem 0 .5rem;
+}
+
+p, li { color: var(--fg); }
+
+.lede { color: var(--muted); font-size: 1.05rem; }
+
+.updated {
+  color: var(--muted);
+  font-size: .9rem;
+  margin: 0 0 2rem;
+}
+
+a { color: var(--accent); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: .95rem;
+  display: block;
+  overflow-x: auto;
+}
+
+th, td {
+  text-align: left;
+  padding: .6rem .7rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+th { font-weight: 600; white-space: nowrap; }
+
+code {
+  background: var(--card);
+  padding: .12em .4em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.cards { list-style: none; padding: 0; margin: 2rem 0 0; }
+
+.cards li { margin: 0 0 .75rem; }
+
+.cards a {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.cards a:hover { border-color: var(--accent); }
+
+.cards strong { display: block; color: var(--accent); }
+
+.cards span { color: var(--muted); font-size: .93rem; }
+
+.callout {
+  background: var(--card);
+  border-left: 3px solid var(--accent);
+  padding: .9rem 1.1rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.25rem 0;
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer a { color: var(--muted); }
+
+.back { display: inline-block; margin-bottom: 2rem; font-size: .9rem; }
