@@ -2,12 +2,15 @@
 
 Public legal pages for the **glfbet** mobile app, served via GitHub Pages.
 
-This repo is public because the pages must be publicly reachable — identity
-providers and app stores require live URLs:
+This repo is public because the pages must be publicly reachable — app stores
+require live URLs:
 
-- Meta / Facebook Login requires a Privacy Policy URL, Terms of Service URL,
-  and User Data Deletion URL before an app can be reviewed or go live.
-- Apple App Store and Google Play both require a privacy policy URL.
+- Apple App Store and Google Play both require a privacy policy URL, and both
+  expect an account-deletion path to be documented.
+
+(The pages were originally stood up for Meta's Facebook Login review. Facebook
+sign-in was dropped on 2026-08-17, but the pages are still required by the app
+stores, so they stay.)
 
 The app source itself lives in the private `glfbet` repo. Nothing here should
 reference internal infrastructure, tenant IDs, or anything not intended to be
